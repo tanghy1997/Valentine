@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+	<meta name="format-detection" content="telephone=no, email=no" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>安徽大学幸福生活指数匿名调查</title>
+	<link rel="stylesheet" href="./css/index.css">
+	<script src="./libs/js/jquery-2.1.4.min.js" type="text/javascript"></script>
+</head>
+<body>
+	<div class="container">
+		<div class="body-title">
+			<img src="./libs/images/1.png" alt="">
+		</div>
+		<div class="body-inthe">
+			据说月老要在旺旺之年为安大学子速配桃花运啦！参与安徽大学幸福生活指数匿名调查，通过性格、恋爱观、生活喜好相关测试，即可进一步的了解自己，预测自己的本命英雄，期盼新的一年爱情学业双丰收！
+		</div>
+		<div class="body-down">
+			<p class="txt">安徽大学已参与小测试人数</p>
+			<div class="votebox">
+				<dl class="barbox">
+					<dd class="barline">
+						<div liang="88" style="width:0rem;" class="charts">
+							<p>1123人</p>
+						</div>
+					</dd>
+				</dl>
+			</div>
+			<div class="value">
+				<p style="float: left;">0人</p>
+				<p style="float: right;">n人</p>
+			</div>
+		</div>
+		<div class="body-buttom">
+			<a href="packName.html"><img src="./libs/images/buttom.png"></a>
+		</div>
+	</div>
+	<script language="javascript">
+		function animate(){
+			$(".charts").each(function(i,item){
+				var a = parseInt($(item).attr("liang"));
+				$(item).animate({
+					width: a + "%"
+				},1000);
+			});
+		}
+		animate();
+</script>
+</body>
+</html>

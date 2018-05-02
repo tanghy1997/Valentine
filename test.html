@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="telephone=no, email=no" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>安徽大学幸福生活指数匿名调查</title>
+    <link rel="stylesheet" href="./libs/css/swiper.min.css">
+    <style>
+    @media screen  and (max-width: 750px){
+      html{font-size:18px;}
+    }
+    @media screen and (min-width:640px) and (max-width:749px){
+        html{font-size:16px; }
+    }
+    @media screen and (min-width:480px) and (max-width:639px){
+        html{font-size:14px; }
+    }
+    @media screen and (min-width:336px) and (max-width:479px){
+        html{font-size:12px; }
+    }
+    @media screen and (max-width:335px){
+        html{font-size:10px; }
+    }
+    html, body {
+      position: relative;
+      height: 100%;
+    }
+    body {
+      background: #c8efff;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color:#000;
+      margin: 0;
+      padding: 0;
+    }
+    .swiper-container {
+      width: 100%;
+      height: 100%;
+      margin-top: 2.2rem;
+    }
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      
+    }
+    .swiper-button-next,.swiper-button-prev{
+      position: relative;
+      bottom: 0;
+      width: 12px;
+      height: 20px;
+      margin-top: -22px;
+      z-index: 0;
+      cursor: pointer;
+      
+      background-size: 12px 20px;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+    .swiper-button-next{
+      margin-left: 90%;
+      top: -2.2%;
+      background-image: url('libs/images/right.png');
+    }
+    .swiper-button-prev{
+      margin-left: 5%;
+      top: -2.1%;
+      background-image: url('libs/images/left.png');
+    }
+    .swiper-pagination{
+      position: relative;
+      z-index: 0;
+      font-size: 16px;
+      margin-left: 5%;
+      /* top:90%; */
+      /* left: 5%; */
+      /* background-color: #adeaff; */
+      height: 3rem;
+      width: 90%;
+      line-height: 3rem;
+      border-radius: 5px;
+    }
+    .question{
+      position: relative;
+      /* margin-bottom: 10rem; */
+      margin: 0;
+    }
+    .question img{
+      display: block;
+      width: 9.8944rem;
+      height: 10.1344rem;
+      margin: 0 auto;
+      margin-bottom: 0;
+    }
+    .question div{
+      box-sizing: border-box;
+      width: 25rem;
+      height: 10.415rem;
+      background-color: #01A5ED;
+      border-radius: 0.415rem 0.415rem 0.415rem 0.415rem ;
+      /* text-align: center; */
+      text-align: justify;
+      word-break:break-all;
+      margin: 0 auto;
+      font-size: 1.25rem;
+      color: #ffffff;
+      padding-top: 1.9rem;
+      padding-left: 1.375rem;
+      padding-right: 1.375rem;
+      z-index: 10;
+      position: relative;
+      bottom: 4.5rem;
+    }
+    .answer{
+      position: relative;
+      /* margin-bottom: 3rem; */
+    }
+
+    .th{
+      width: 12.5rem;
+      height: 3.335rem;
+      background-color: #FE6480;
+      border: 2px solid #000000;
+      box-sizing: border-box;
+      text-align: center;
+      line-height: 3.335rem;
+      margin: 0 auto;
+      position: relative;
+      bottom: 17.6rem;
+      /* z-index: 5px; */
+      font-size: 1.5rem;
+      color: #ffffff;
+    }
+
+    .select{
+      width: 25rem;
+      height: 15.835rem;
+      background-color: #ffffff;
+      border: 2px solid #000000;
+      border-radius: 10px;
+      margin: 0 auto;
+      position: relative;
+      /* bottom: 2.5rem; */
+    }
+    .box{
+        width:90%;
+        height: 100%;
+        text-align:left;
+        margin:0 auto;
+        padding-top: 2.75rem;
+        font-size: 1.2rem;
+        color: #000000;
+      }
+    .box input{
+      position: relative;
+      margin-right: 15px;
+      margin-bottom: 0.5rem;
+      vertical-align: middle;
+    }
+    .box label{
+      margin-bottom: 0.5rem;
+    }
+    
+    </style>
+    <script src="./libs/js/jquery-2.1.4.min.js"></script>
+</head>
+<body>
+<!-- Swiper -->
+<div class="swiper-container">
+        <form class="swiper-wrapper">
+          <!-- 第一题 -->
+          <div class="swiper-slide">
+              <!-- 题目主体部分 -->
+              <div class="question">
+                  <img src="./libs/images/logo.png" alt="logo">
+                <div>
+                  1. 新年到月老现身送了你很多桃花。一位颜值极佳但不熟悉的异性经常挑逗你，还给你发若隐若现的裸图。你会采取何种态度予以应对？
+                </div>
+              </div>
+              <!-- 题目选项部分 -->
+              <div class="answer">
+                <div class="select">
+                <div class="box">
+                <input type="radio" name="number1" id="n11" value="A">
+                <label for="n11">不理不睬</label>
+                <br>
+                <input type="radio" name="number1" id="n12" value="B">
+                <label for="n12">气愤骂Ta</label>
+                <br>
+                <input type="radio" name="number1" id="n13" value="C">
+                <label for="n13">找TA谈谈</label>
+                <br>
+                <input type="radio" name="number1" id="n14" value="D">
+                <label for="n14">撩完就跑</label>
+                <br>
+                <input type="radio" name="number1" id="n15" value="E">
+                <label for="n15">睡过再说</label>
+                </div>
+                </div>
+                <div class="th">第1题</div>
+              </div>
+              <!-- Add Pagination -->
+              <div class="swiper-pagination"></div>
+              <!-- Add Arrows -->
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+          </div>
+
+          <!-- 第二题 -->
+          <div class="swiper-slide">
+            <!-- 题目主体部分 -->
+              <div class="question">
+                <img src="./libs/images/logo.png" alt="logo">
+                <div>
+                    2. 你以为桃花运仅此而已！没想到突然月老托梦给你，你将拥有和下面人物中的一位单独相处一天并有所发展的机会，你会选谁？
+                </div>
+              </div>
+              <!-- 题目选项部分 -->
+              <div class="answer">
+                <div class="select">
+                <div class="box">
+                <input type="radio" name="number2" id="n21">
+                <label for="n21">统一华夏、英明神武政客【秦始皇】</label>
+                <br>
+                <input type="radio" name="number2" id="n22">
+                <label for="n22">性感、靓丽女神【奥黛丽·赫本】</label>
+                <br>
+                <input type="radio" name="number2" id="n23">
+                <label for="n23">才华横溢、德艺双馨明星【胡歌】</label>
+                <br>
+                <input type="radio" name="number2" id="n24">
+                <label for="n24">你【暗恋很久的单身异性】</label>
+                <br>
+                <input type="radio" name="number2" id="n25">
+                <label for="n25">智商超群科学家【爱因斯坦】</label>
+                </div>
+                </div>
+                <div class="th">第2题</div>
+              </div>
+              <!-- Add Pagination -->
+              <div class="swiper-pagination"></div>
+              <!-- Add Arrows -->
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+          </div>
+
+          <!-- 第三题 -->
+          <div class="swiper-slide">
+              <!-- 题目主体部分 -->
+              <div class="question">
+                  <img src="./libs/images/logo.png" alt="logo">
+                <div style="padding-top: 0.8rem">
+                    3. 过完这一天后月老抛给你一个选择：七夕节当天晚上，你、室友、你的恋人到翡翠湖散步。突然，你的室友和恋人不慎同时掉进翡翠湖，你必须先救一位，你会？
+                </div>
+              </div>
+              <!-- 题目选项部分 -->
+              <div class="answer">
+                <div class="select">
+                <div class="box">
+                <input type="radio" name="number3" id="n31">
+                <label for="n31">先救室友</label>
+                <br>
+                <input type="radio" name="number3" id="n32">
+                <label for="n32">先救恋人</label>
+                <br>
+                <input type="radio" name="number3" id="n33">
+                <label for="n33">太难了，两个都不救</label>
+                <br>
+                <input type="radio" name="number3" id="n34">
+                <label for="n34">救室友然后跳翡翠湖</label>
+                <br>
+                <input type="radio" name="number3" id="n35">
+                <label for="n35">救恋人然后跳翡翠湖</label>
+                </div>
+                </div>
+                <div class="th">第3题</div>
+              </div>
+              <!-- Add Pagination -->
+              <div class="swiper-pagination"></div>
+              <!-- Add Arrows -->
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+          </div>
+
+          <!-- 第四题 -->
+          <div class="swiper-slide">
+            <!-- 题目主体部分 -->
+              <div class="question">
+                <img src="./libs/images/logo.png" alt="logo">
+                <div>
+                    4. 如果你在大学期间恋爱，是否会抱有结婚的心态？
+                </div>
+              </div>
+              <!-- 题目选项部分 -->
+              <div class="answer">
+                <div class="select">
+                <div class="box">
+                <input type="radio" name="number4" id="n41">
+                <label for="n41">会</label>
+                <br>
+                <input type="radio" name="number4" id="n42">
+                <label for="n42">不会</label>
+                </div>
+                </div>
+                <div class="th">第4题</div>
+              </div>
+              <!-- Add Pagination -->
+              <div class="swiper-pagination"></div>
+              <!-- Add Arrows -->
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+          </div>
+
+          <!-- 第五题 -->
+          <div class="swiper-slide">
+            <!-- 题目主体部分 -->
+            <div class="question">
+                <img src="./libs/images/logo.png" alt="logo">
+                <div>
+                    5. 对于一些基本的性知识，你是通过什么渠道获取的？
+                </div>
+              </div>
+              <!-- 题目选项部分 -->
+              <div class="answer">
+                <div class="select">
+                <div class="box">
+                <input type="radio" name="number5" id="51">
+                <label for="n51">小 huang 片</label>
+                <br>
+                <input type="radio" name="number5" id="52">
+                <label for="n52">课堂老师讲解</label>
+                <br>
+                <input type="radio" name="number5" id="53">
+                <label for="n53">网站科普信息</label>
+                <br>
+                <input type="radio" name="number5" id="54">
+                <label for="n54">与家长的聊天</label>
+                <br>
+                <input type="radio" name="number5" id="55">
+                <label for="n55">与同学的聊天</label>
+                </div>
+                </div>
+                <div class="th">第5题</div>
+              </div>
+              <!-- Add Pagination -->
+              <div class="swiper-pagination"></div>
+              <!-- Add Arrows -->
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+          </div>
+
+          <!-- 第六题 -->
+          <div class="swiper-slide">
+            <!-- 题目主体部分 -->
+            <div class="question">
+                <img src="./libs/images/logo.png" alt="logo">
+                <div>
+                    6. 你觉得多少岁有性行为是正常的？
+                </div>
+              </div>
+              <!-- 题目选项部分 -->
+              <div class="answer">
+                <div class="select">
+                <div class="box">
+                <input type="radio" name="number6" id="61">
+                <label for="n61">18岁以上都可以</label>
+                <br>
+                <input type="radio" name="number6" id="62">
+                <label for="n62">至少要大学毕业</label>
+                <br>
+                <input type="radio" name="number6" id="63">
+                <label for="n63">结婚之前不接受</label>
+                </div>
+                </div>
+                <div class="th">第6题</div>
+              </div>
+              <!-- Add Pagination -->
+              <div class="swiper-pagination"></div>
+              <!-- Add Arrows -->
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+          </div>
+
+          <!-- 第七题 -->
+          <div class="swiper-slide">
+            <!-- 题目主体部分 -->
+            <div class="question">
+                <img src="./libs/images/logo.png" alt="logo">
+                <div>
+                    7. 你有过性爱经历吗？
+                </div>
+            </div>
+              <!-- 题目选项部分 -->
+            <div class="answer">
+                <div class="select">
+                <div class="box">
+                <input type="radio" name="number7" id="n71">
+                <label for="n71">有</label>
+                <br>
+                <input type="radio" name="number7" id="n72">
+                <label for="n72">没有</label>
+              </div>
+              </div>
+              <div class="th">第7题</div>
+            </div>
+              <!-- Add Pagination -->
+              <div class="swiper-pagination"></div>
+              <!-- Add Arrows -->
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+          </div>
+
+          <!-- 第八题 -->
+          <div class="swiper-slide">
+             <!-- 题目主体部分 -->
+             <div class="question">
+                <img src="./libs/images/logo.png" alt="logo">
+                <div>
+                    8. 你觉得你们寝室4人中，有过啪啪经历的可能会有几位？
+                </div>
+              </div>
+              <!-- 题目选项部分 -->
+              <div class="answer">
+                <div class="select">
+                <div class="box">
+                <input type="radio" name="number8" id="n81">
+                <label for="n81">1</label>
+                <br>
+                <input type="radio" name="number8" id="n82">
+                <label for="n82">2</label>
+                <br>
+                <input type="radio" name="number8" id="n83">
+                <label for="n83">3</label>
+                <br>
+                <input type="radio" name="number8" id="n84">
+                <label for="n84">4</label>
+                <br>
+                <input type="radio" name="number8" id="n85">
+                <label for="n85">0</label>
+              </div>
+              </div>
+              <div class="th">第8题</div>
+              </div>
+              <!-- Add Pagination -->
+              <div class="swiper-pagination"></div>
+              <!-- Add Arrows -->
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+          </div>
+
+          <!-- 第九题 -->
+          <div class="swiper-slide">
+            <!-- 题目主体部分 -->
+            <div class="question">
+                <img src="./libs/images/logo.png" alt="logo">
+                <div>
+                    9. 你和你的恋人在一起一周年，决定在5.20这一天晚上来一场翻云覆雨（啪啪），你们会选择去哪里？
+                </div>
+              </div>
+              <!-- 题目选项部分 -->
+              <div class="answer">
+                <div class="select">
+                <div class="box">
+                <input type="radio" name="number9" id="n91">
+                <label for="n91">九龙街</label>
+                <br>
+                <input type="radio" name="number9" id="n92">
+                <label for="n92">中环城</label>
+                <br>
+                <input type="radio" name="number9" id="n93">
+                <label for="n93">大学城</label>
+                <br>
+                <input type="radio" name="number9" id="n94">
+                <label for="n94">港澳</label>
+                <br>
+                <input type="radio" name="number9" id="n95">
+                <label for="n95">稍远点的市区</label>
+              </div>
+              </div>
+              <div class="th">第9题</div>
+              </div>
+              <!-- Add Pagination -->
+              <div class="swiper-pagination"></div>
+              <!-- Add Arrows -->
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+          </div>
+
+          <!-- 第十题 -->
+          <div class="swiper-slide">
+            <!-- 题目主体部分 -->
+            <div class="question">
+                <img src="./libs/images/logo.png" alt="logo">
+                <div>
+                    10. 假如你和你的恋人单独在一起对方提出啪啪的要求，你会？
+                </div>
+              </div>
+              <!-- 题目选项部分 -->
+              <div class="answer">
+                <div class="select">
+                <div class="box">
+                <input type="radio" name="number10" id="n101">
+                <label for="n101">接受</label>
+                <br>
+                <input type="radio" name="number10" id="n102">
+                <label for="n102">不接受</label>
+                <br>
+                <input type="radio" name="number10" id="n103">
+                <label for="n103">视情况而定</label>
+                </div>
+                </div>
+                <div class="th">第10题</div>
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+                <!-- Add Arrows -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+          </div>
+
+          <!-- 第十一题 -->
+          <div class="swiper-slide">
+            <!-- 题目主体部分 -->
+            <div class="question">
+                <img src="./libs/images/logo.png" alt="logo">
+                <div>
+                    11. 如果是在大学与恋人第一次发生性关系之后，你可能会产生什么样的心理？
+                </div>
+              </div>
+              <!-- 题目选项部分 -->
+              <div class="answer">
+                <div class="select">
+                <div class="box">
+                <input type="radio" name="number11" id="n111">
+                <label for="n111">要对Ta负责任，以后好好待Ta</label>
+                <br>
+                <input type="radio" name="number11" id="n112">
+                <label for="n112">都是成年人，没必要太在意</label>
+                <br>
+                <input type="radio" name="number11" id="n113">
+                <label for="n113">既然已经发生关系，以后得结婚</label>
+              </div>
+              </div>
+              <div class="th">第11题</div>
+              </div>
+              <!-- Add Pagination -->
+              <div class="swiper-pagination"></div>
+              <!-- Add Arrows -->
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+          </div>
+
+          <!-- 第十二题 -->
+          <div class="swiper-slide">
+            <!-- 题目主体部分 -->
+            <div class="question">
+                <img src="./libs/images/logo.png" alt="logo">
+                <div>
+                    12. 看过影视剧、科普作品甚至亲身经历的小伙伴应该知道，不同的羞羞姿势会有不同的体验！想象一下，你在与恋人羞羞的过程中，你会更偏爱哪个姿势？
+                </div>
+              </div>
+              <!-- 题目选项部分 -->
+              <div class="answer">
+                <div class="select">
+                <div class="box">
+                <input type="radio" name="number12" id="n121">
+                <label for="n121">男上女下</label>
+                <br>
+                <input type="radio" name="number12" id="n122">
+                <label for="n122">女上男下</label>
+                <br>
+                <input type="radio" name="number12" id="n123">
+                <label for="n123">想解锁更多姿势</label>
+              </div>
+              </div>
+              <div class="th">第12题</div>
+              </div>
+              <!-- Add Pagination -->
+              <div class="swiper-pagination"></div>
+              <!-- Add Arrows -->
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+          </div>
+        </form>
+        
+        </div>
+    
+      <!-- Swiper JS -->
+      <script src="./libs/js/swiper.min.js"></script>
+    
+      <!-- Initialize Swiper -->
+      <script>
+        var swiper = new Swiper('.swiper-container', {
+          pagination: {
+            el: '.swiper-pagination',
+            type: 'fraction',
+          },
+          navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+          },
+        });
+      </script>
+      <script src="./js/test.js"></script>
+</body>
+</html>
